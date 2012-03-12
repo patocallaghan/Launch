@@ -1,0 +1,76 @@
+/*----------------------------------------*\
+	*01: NORMALISE.CSS & DEFAULT STYLINGS
+\*----------------------------------------*/
+/*--- HTML5 DISPLAY DEFINITIONS ---*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; height: 0; }
+[hidden] { display: none; }
+
+/*--- BASE ---*/
+html { overflow-y: scroll; }
+body { margin: 0; background: #fff; }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+/*--- LISTS ---*/
+.nav,
+[class*="listing"] {
+	list-style:none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0;
+}
+.nav li,
+[class*="listing"] li {
+	display:inline-block;
+	margin: 0;
+}
+.ie7 .nav li,
+.ie7 [class*="listing"] li {
+	zoom: 1;
+	display: inline;
+}
+.nav a,
+[class*="listing"] a {
+	display:inline-block;
+}
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+ul li { list-style: disc; }
+ol li { list-style-type: decimal; }
+li > ul,
+li > ol{
+	margin-bottom:0;
+}
+dd { margin: 0 0 0 40px; }
+
+/*--- EMBEDDED CONTENT / MEDIA ---*/
+/* Image */
+img { 
+	border: 0; 
+	-ms-interpolation-mode: bicubic; 
+	vertical-align: middle;
+}
+img.left	{ margin:0 1.5em 0 0; }
+img.right	{ margin:0 0 0 1.5em; }
+/* SVG */
+svg:not(:root) { overflow: hidden; }
+/* Flash Video */
+object,
+embed,
+video{
+	max-width:100%;
+	height:auto;
+}
+
+/*--- FIGURES ---*/
+figure, .figure { margin: 0; }
+figure img,
+.figure img {
+	display:block;
+	margin-bottom:0;
+}
+
+/*--- TABLES ---*/
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }

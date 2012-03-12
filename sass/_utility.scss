@@ -1,0 +1,36 @@
+/*------------------------------------*\
+	*08: UTILITY CLASSES
+\*------------------------------------*/
+/* For image replacement */
+.ir { border:0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+.text-center 			{ text-align: center !important; }
+.text-right 			{ text-align: right !important; }
+.text-left 				{ text-align: left !important; }
+.float-right 			{ float: right !important; }
+.float-left 			{ float: left !important;}
+.clear 					{ clear: both !important; }
+.uppercase 				{ text-transform: uppercase !important; }
+.nowrap 				{ white-space: nowrap !important; }
+.no-right-margin		{ margin-right: 0 !important; }
+.no-left-margin			{ margin-left: 0 !important; }
+.no-top-margin			{ margin-top: 0 !important; }
+.no-bottom-margin		{ margin-bottom: 0 !important; }
+.no-margin				{ margin:0 !important; }
+.no-padding-top			{ padding-top:0 !important; }
+.no-padding-right		{ padding-right:0 !important; }
+.no-padding-bottom		{ padding-bottom:0 !important; }
+.no-padding-left		{ padding-left:0 !important; }
+.no-padding				{ padding:0 !important; }
+.hot					{ cursor:pointer !important; }
+/* Clearfix */
+.self-clear:before, .self-clear:after { content: ""; display: table; }
+.self-clear:after { clear: both; }
+.self-clear { *zoom: 1; }
