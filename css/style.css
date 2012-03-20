@@ -182,6 +182,7 @@ h6,.h6{
 	font-size:Xrem;
 	line-height:;
 }
+small,
 .small {
 	font-size:Xpx;
 	font-size:Xrem;
@@ -318,10 +319,10 @@ input:invalid, textarea:invalid { background-color: #f0dddd; }
 .clear 					{ clear: both !important; }
 .uppercase 				{ text-transform: uppercase !important; }
 .nowrap 				{ white-space: nowrap !important; }
-.no-right-margin		{ margin-right: 0 !important; }
-.no-left-margin			{ margin-left: 0 !important; }
-.no-top-margin			{ margin-top: 0 !important; }
-.no-bottom-margin		{ margin-bottom: 0 !important; }
+.no-margin-right		{ margin-right: 0 !important; }
+.no-margin-left			{ margin-left: 0 !important; }
+.no-margin-top			{ margin-top: 0 !important; }
+.no-margin-bottom		{ margin-bottom: 0 !important; }
 .no-margin				{ margin:0 !important; }
 .no-padding-top			{ padding-top:0 !important; }
 .no-padding-right		{ padding-right:0 !important; }

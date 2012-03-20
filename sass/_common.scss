@@ -1,0 +1,72 @@
+//------------------------------------------------------------*\
+//	COMMON - mixins, variables, functions
+//------------------------------------------------------------*/
+//IMPORTS
+@import "compass/css3";
+
+//Settings
+$experimental-support-for-svg: true;
+
+//============== VARIABLES ===============
+//Colours
+$black: #000;
+$darkest-grey: #333;
+$dark-grey: #585858;
+$grey: #959595;
+$light-grey: #e4e4e4;
+$white: #fff;
+$navy-blue: #1E2B5C;
+$sky-blue: #257CD1;
+$baby-blue: #e9f4fe;
+$darker-blue: #0059B1;
+$green: #00A61F;
+$red: #F00;
+$pod-border: #959595;
+$orange-start: #ffa800;
+$orange-stop: #fb8321;
+//Colour Assignments
+$header: $navy-blue;
+$body-background: $light-grey;
+$success: $green;
+$error: $red;
+$pod-border: $grey;
+$breadcrumbs: #585858;
+//Typography
+$font-base: 12px;
+$font-base-line-height: 18px;
+$line-height-ratio: $font-base-line-height / $font-base;
+$link: $sky-blue;
+$link-background: $baby-blue;
+$link-hover: $darker-blue;
+$link-visited:$dark-grey;
+$link-footer: $black;
+$link-footer-hover: $white;
+$base: $darkest-grey;
+
+//==================== FUNCTIONS =========================
+//Line Height calculation
+@function lh($amount: 1, $context: $font-base, $minus: false) {
+	@if $amount > 1 {
+		$amount: $amount/$font-base-line-height;
+	}
+	$result: em($font-base-line-height * $amount, $context);
+	@if $minus == true {
+		@return $result * -1;
+	} @else {
+		@return $result;
+	}
+}
+//Font Size calculation
+@function em($target, $context: $font-base) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0em;
+}
+
+//==================== INHERITANCE =========================
+// WARNING!!!! 
+// THESE CLASSES ARE USED FOR INHERITANCE WITH THE @EXTEND DIRECTION. BE CAREFUL WHEN ALTERING AS THEY MAY CAUSE UNWANTED CHANGES IN OTHER PARTS OF THE CODE
+.orange-gradient {
+	@include filter-gradient($orange-start, $orange-stop);
+	@include background-image(linear-gradient($orange-start, $orange-stop));
+}
+
